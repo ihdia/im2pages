@@ -2,8 +2,6 @@
 
 <samp>
 
-<h1> PALMIRA </h1>
-
 <h2> Deformable Deep Networks for Instance Segmentation of Overlapping Multi Page Handwritten Documents</h2>
 
 </samp>
