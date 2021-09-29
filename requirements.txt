@@ -1,0 +1,22 @@
+matplotlib
+MedPy
+numpy
+opencv-python
+Pillow
+scikit-image
+scikit-learn
+scipy
+Shapely
+tabulate
+tensorboard
+tensorboard-plugin-wit
+tensorboardX
+torch
+torchvision
+tqdm
+ninja
+#git+https://github.com/facebookresearch/detectron2.git
+pyyaml
+# Please follow official detectron2, PyTorch installation
+# instructions as an environement file does not account for your
+# hardware and building a framework the recommended way
