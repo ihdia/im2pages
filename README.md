@@ -46,7 +46,9 @@ pip install -r requirements.txt
     - Dataset under `images` directory
     - COCO-Pretrained Model weights and Palmira pretrained weights in the `init_weights` directory
         - Weights
-          used: [[`Mask RCNN R50-FPN-1x Link`](https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_1x/137260431/model_final_a54504.pkl)]
+          used:
+          -COCO-Pretrained Model weights: [[`Mask RCNN R50-FPN-1x Link`](https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_1x/137260431/model_final_a54504.pkl)]
+          -Indiscapesv2 Pretrained Model weights: [[`Palmira model weights`]](link)
     - JSON in `doc_pb` directory
 
 ### SLURM Workloads
