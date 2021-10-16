@@ -11,7 +11,7 @@
 # Dependencies and Installation
 ## Manual Setup
 
-The PALMIRA code is tested with
+The IM2PAGES code is tested with
 
 - Python (`3.8.10`)
 - PyTorch (`1.9.0`)
