@@ -48,7 +48,7 @@ pip install -r requirements.txt
         - Weights
           used:
           -COCO-Pretrained Model weights: [[`Mask RCNN R50-FPN-1x Link`](https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_1x/137260431/model_final_a54504.pkl)]
-          -Indiscapesv2 Pretrained Model weights: [[`Palmira model weights`]](link)
+          -Indiscapesv2 Pretrained Model weights: [[`Palmira model weights`]](https://zenodo.org/record/4841067#.YXOWqxpBxPY)
     - JSON in `doc_pb` directory
 
 ### SLURM Workloads
@@ -64,7 +64,7 @@ module add cudnn/7.6.5-cuda-10.2
 
 ### Palmira and variants
 
-Train the presented network
+Train the presented networks
 
 ```bash
 python train_palmira.py \
@@ -72,10 +72,9 @@ python train_palmira.py \
     --num-gpus 4
 ```
 - Any required hyper-parameter changes including initial weights can be performed in the `Palmira.yaml` file.
-- To run the experiment of palmira and its variants change the input config files
+- To run the experiment of palmira and its variants change the input config files in the args section
 - Resuming from checkpoints can be done by adding `--resume` to the above command.
   
- 
  ## Inference
 
 ### Quantitative
@@ -111,13 +110,13 @@ python visualise_json_results.py \
 
 ### Custom Images
 
-To run the model on your own images without training, please download the provided weights from  **[[`here`](https://zenodo.org/record/4841067#.YPWrcugzZPY)]**.
+To run the model on your own images without training, please download the provided weights from  **[[`here`](https://zenodo.org/record/5592133#.YXOabhpBxPY)]** for FT-Palmira-AS and here **[[`here`](https://zenodo.org/record/5592139#.YXOaqhpBxPY)]** for FT-Vanilla Mask RCNN .
 
 ```bash
 python demo.py \
     --input <path-to-image-directory-*.jpg> \
     --output <path-to-output-directory> \
-    --config configs/palmira/Palmira.yaml \
-    --opts MODEL.WEIGHTS <init-weights.pth>
+    --config corresponding_config.yaml \
+    --opts MODEL.WEIGHTS <Pretrained_model_weights.pth>
 ```
 
