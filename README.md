@@ -8,6 +8,8 @@
   
 <div align="left">
   
+<img src="/assets/Im2page_Architecture.png"/>
+  
 # Dependencies and Installation
 ## Manual Setup
 
@@ -119,4 +121,12 @@ python demo.py \
     --config corresponding_config.yaml \
     --opts MODEL.WEIGHTS <Pretrained_model_weights.pth>
 ```
+ ### Sample Outputs
+ <img src="/assets/Im2page_results1-1.png"/>
+# Contact
 
+For any queries, please contact [Dr. Ravi Kiran Sarvadevabhatla](mailto:ravi.kiran@iiit.ac.in.)
+
+# License
+
+This project is open sourced under [MIT License](LICENSE).
