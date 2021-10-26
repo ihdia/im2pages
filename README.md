@@ -123,6 +123,7 @@ python demo.py \
 ```
  ### Sample Outputs
  <img src="/assets/Im2page_results1-1.png"/>
+
 # Contact
 
 For any queries, please contact [Dr. Ravi Kiran Sarvadevabhatla](mailto:ravi.kiran@iiit.ac.in.)
