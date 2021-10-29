@@ -12,7 +12,7 @@ import csv
 from medpy.metric import hd, hd95, assd
 from scipy.interpolate import splprep, splev
 
-from indiscapes_dataset_pb import categories_list
+from immi_dataset import categories_list
 
 
 def _proc_annotations(annotations):
@@ -216,7 +216,7 @@ class HDEvaluator(DatasetEvaluator):
             for l in doc_acc.values():
                 total_acc.extend(l)
             doc_acc = np.mean(total_acc)
-            with open("outputs/Palmira/metrics.csv", 'w') as csvfile:
+            with open("outputs/metrics.csv", 'w') as csvfile:
                 writer = csv.DictWriter(csvfile, fieldnames=["Image", "AHD", "IOU", "HD", "HD95", "ACC"])
                 writer.writeheader()
                 for filename, metrics in self.doc_wise.items():

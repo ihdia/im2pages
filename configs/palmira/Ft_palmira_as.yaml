@@ -1,6 +1,6 @@
 _BASE_: "Base-DefGird-MRCNN-FPN.yaml"
 MODEL:
-  WEIGHTS: "defgrid_dconv.pth"
+  WEIGHTS: "Palmira_indiscapes.pth"
   BACKBONE:
     NAME: "build_resnet_fpn_backbone"
     # FREEZE_AT : 5
@@ -29,7 +29,7 @@ INPUT:
 DATASETS:
   TRAIN: ("indiscapes_train",)
   TEST: ("indiscapes_test",)
-OUTPUT_DIR: "outputs_new/Palmira_pb_1799"
+OUTPUT_DIR: "outputs/"
 VIS_PERIOD: 200
 TEST:
   EVAL_PERIOD: 200

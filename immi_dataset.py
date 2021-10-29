@@ -7,7 +7,7 @@ from detectron2.data import MetadataCatalog
 from detectron2.structures import BoxMode
 
 images_root = "images"  # This must contain 4 folders each for a dataset
-via_json_root = "doc_pb"  # This must contain 3 folders named train, test, val; each with a via_region_data.json
+via_json_root = "doc"  # This must contain 3 folders named train, test, val; each with a via_region_data.json
 
 
 categories_dict = {
