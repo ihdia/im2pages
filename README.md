@@ -51,7 +51,6 @@ pip install -r requirements.txt
           used:
           -COCO-Pretrained Model weights: [[`Mask RCNN R50-FPN-1x Link`](https://dl.fbaipublicfiles.com/detectron2/COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_1x/137260431/model_final_a54504.pkl)]
           -Indiscapesv2 Pretrained Model weights: [[`Palmira model weights`]](https://zenodo.org/record/4841067#.YXOWqxpBxPY)
-    - JSON in `doc_pb` directory
 
 ### SLURM Workloads
 
@@ -73,7 +72,7 @@ python train_palmira.py \
     --config-file configs/palmira/Palmira.yaml \
     --num-gpus 4
 ```
-- Any required hyper-parameter changes including initial weights can be performed in the `Palmira.yaml` file.
+- Any required hyper-parameter changes including initial weights can be performed in the corresponding config file.
 - To run the experiment of palmira and its variants change the input config files in the args section
 - Resuming from checkpoints can be done by adding `--resume` to the above command.
   
@@ -121,6 +120,7 @@ python demo.py \
     --config corresponding_config.yaml \
     --opts MODEL.WEIGHTS <Pretrained_model_weights.pth>
 ```
+  
  ### Sample Outputs
  <img src="/assets/Im2page_results1-1.png"/>
 
