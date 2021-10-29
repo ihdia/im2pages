@@ -68,7 +68,7 @@ module add cudnn/7.6.5-cuda-10.2
 Train the presented networks
 
 ```bash
-python train_palmira.py \
+python train_net_palmira.py \
     --config-file configs/palmira/Palmira.yaml \
     --num-gpus 4
 ```
@@ -83,7 +83,7 @@ python train_palmira.py \
 To perform inference and get quantitative results on the test set.
 
 ```bash
-python train_palmira.py \
+python train_net_palmira.py \
     --config-file corresponding_config.yaml \
     --eval-only \
     MODEL.WEIGHTS <path-to-model-file> 
