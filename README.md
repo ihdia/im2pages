@@ -111,7 +111,7 @@ python visualise_json_results.py \
 
 ### Custom Images
 
-To run the model on your own images without training, please download the provided weights from  **[[`here`](https://zenodo.org/record/5592133#.YXOabhpBxPY)]** for FT-Palmira-AS and here **[[`here`](https://zenodo.org/record/5592139#.YXOaqhpBxPY)]** for FT-Vanilla Mask RCNN .
+To run the model on your own images without training, please download the provided weights from  **[[`here`](https://zenodo.org/record/5592133#.YXOabhpBxPY)]** for FT-Palmira-AS and here **[[`here`](https://zenodo.org/record/5592139#.YXOaqhpBxPY)]** for FT-Vanilla Mask RCNN .PLease find the colab Notebook link [here](https://colab.research.google.com/drive/12Fuaw6x09cd30-59dw9KXrgZpu7yKa3k?usp=sharing) for the same demo.
 
 ```bash
 python demo.py \
